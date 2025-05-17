@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Radial Menu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-channel">
+            <div class="container-channel-sub">
+                <i class="fi fi-rr-world"></i>
+                <p>Chat tổng</p>
+            </div>
+            <div class="container-channel-sub">
+                <i class="fi fi-rr-users-alt"></i>
+                <p>Hội nhóm</p>
+            </div>
+            <div class="container-channel-sub">
+                <i class="fi fi-rr-shopping-cart-add"></i>
+                <p>Mua bán</p>
+            </div>
+            <div class="container-channel-sub">
+                <i class="fi fi-rr-laptop-mobile"></i>
+                <p>Hệ thống</p>
+            </div>
+        </div>
+        <div class="container-chat">
+            <div class="container-chat-item">
+                <p class="message-line">
+                    <span class="time">18:30:21 30/4</span>
+                    <span class="author author-blue">[1] [Cảnh Sát] Putin</span> 
+                    <span class="single-msg">Xin chào anh chị em, tôi đến đây để giải cứu thế giới Xin chào anh chị em, tôi đến đây để giải cứu thế giới Xin chào anh chị em, tôi đến đây để giải cứu thế giới Xin chào anh chị em, tôi đến đây để giải cứu thế giới</span>
+                </p>
+            </div>
+            <div class="container-chat-item">
+                <p class="message-line">
+                    <span class="time">18:30:21 30/4</span>
+                    <span class="vip">VIP 4</span>
+                    <span class="author author-blue">[1] [Cảnh Sát] Putin</span> 
+                    <span class="single-msg">Có ai không</span>
+                </p>
+            </div>
+            <div class="container-chat-item">
+                <p class="message-line">
+                    <span class="time">18:30:21 30/4</span>
+                    <span class="group">Hội nhóm</span>
+                    <span class="author author-pink">[1] [Bác Sĩ] Putin</span> 
+                    <span class="single-msg">cần cứu thì ping lên</span>
+                </p>
+            </div>
+            <div class="container-chat-item">
+                <div class="message-block">
+                    <div class="message-block-info">
+                        <div class="left">
+                            <i class="fi fi-rr-megaphone"></i>
+                            <p>Cảnh Sát</p>
+                        </div>
+                        <div class="right">
+                            18:30:41 30/4
+                        </div>
+                    </div>
+                    <div class="message-block-data">
+                        <span>Cư dân tập trung về thành phố để quay tay tập thể sau 30 phút nữa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-chat-item">
+                <p class="message-line">
+                    <span class="time">18:30:21 30/4</span>
+                    <span class="author author-red">[1] [Băng Đảng] Putin</span> 
+                    <span class="single-msg">lên bãi cần var đi</span>
+                </p>
+            </div>
+            <div class="container-chat-item">
+                <p class="message-line">
+                    <span class="time">18:30:21 30/4</span>
+                    <span class="author author-black">[1] Putin</span> 
+                    <span class="single-msg">lên bãi cần var đi</span>
+                </p>
+            </div>
+            <div class="container-chat-item">
+                <p class="message-line">
+                    <span class="time">18:30:21 30/4</span>
+                    <span class="system author-red">Hệ Thống</span> 
+                    <span class="single-msg">lên bãi cần var đi</span>
+                </p>
+            </div>
+        </div>
+        <div class="container-form">
+            <div class="container-form-inputside">
+                <div class="container-form-inputside-icon">
+                    <i class="fi fi-rr-pen-field"></i>
+                </div>
+                <div class="container-form-inputside-input">
+                    <input class="input-text" type="text" placeholder="Nhập nội dung...">
+                    <div class="container-form-inputside-suggest">
+
+                        <div class="container-form-inputside-suggest-item">
+                            <div class="command">
+                                <p>/givemoney</p>
+                                <p class="active">[id]</p>
+                                <p>[name]</p>
+                                <p>[amount]</p>
+                            </div>
+                            <div class="description">give tiền cho người chơi khác</div>
+                        </div>
+
+                        <div class="container-form-inputside-suggest-item">
+                            <div class="command">
+                                <p>/giveitem</p>
+                            </div>
+                        </div>
+                        <div class="container-form-inputside-suggest-item">
+                            <div class="command">
+                                <p>/car</p>
+                            </div>
+                        </div>
+                        <div class="container-form-inputside-suggest-item">
+                            <div class="command">
+                                <p>/test</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-form-inputside-send">
+                    <i class="fi fi-rr-location-arrow"></i>
+                </div>
+            </div>
+            <div class="container-form-btnside">
+                <div class="container-form-btnside-btn emoji-btn">
+                    <i class="fi fi-rr-smile"></i>
+                </div>
+                <div class="container-form-btnside-btn delete-btn">
+                    <i class="fi fi-rr-trash"></i>
+                </div>
+                <div class="container-form-btnside-btn scroll-btn">
+                    <i class="fi fi-rr-down"></i>
+                </div>
+                <div class="container-form-btnside-btn setting-btn">
+                    <i class="fi fi-rr-settings"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container-setting">
+            <div class="container-setting-head">
+                <i class="fi fi-rr-settings"></i>
+                <p>Cài Đặt</p>
+            </div>
+            <div class="container-setting-option">
+                <div class="option-setting">
+                    <input type="checkbox" data-option="0">
+                    <p>Luôn ẩn chat , chỉ hiện khi nhập</p>
+                </div>
+                <div class="option-setting">
+                    <input type="checkbox" data-option="1">
+                    <p>Hiện khi có tin nhắn mới</p>
+                </div>
+                <div class="option-setting">
+                    <input type="checkbox" data-option="2">
+                    <p>Luôn hiện ô chat</p>
+                </div>
+            </div>
+        </div>
+        <emoji-picker style="display: none;"></emoji-picker>
+
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
